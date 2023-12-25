@@ -8,7 +8,7 @@ export default function ProductComponents() {
   const products = useSelector((state) => state.allProducts.product);
 
   return (
-    <Grid relaxed columns={4}>
+    <Grid relaxed columns={4} doubling stackable>
       {products.map((product) => {
         const { id, image, title, price, category } = product;
         return (
